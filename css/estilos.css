@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(39, 39, 39);
+  margin: 0;
+  font-family: "Roboto Flex", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+main {
+  background-color: black;
+  padding: 10px;
+}
+
+.custome_navegacion {
+  background-color: rgb(39, 39, 39) !important;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  border-radius: 30px;
+  outline: 2px solid white;
+  outline-offset: -6px;
+  --bs-navbar-brand-margin-end: 20rem;
+  width: 100%;
+  z-index: 1000;
+}
+.custome_navegacion a {
+  color: white;
+  text-decoration: none;
+}
+.custome_navegacion a:focus, .custome_navegacion a :hover {
+  color: #E41D69;
+}
+
+.custome_brand {
+  font-family: "Permanent Marker", serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.custome_toggler {
+  background-color: white !important;
+}
+
+.custome_navegacion_botones {
+  font-family: "Permanent Marker", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* INICIO DESPLEGABLE */
+.custome_dropdown:focus {
+  color: #E41D69 !important;
+}
+
+.custome_dropdownmenu {
+  --bs-dropdown-bg: azure;
+  font-size: 1.5rem;
+}
+.custome_dropdownmenu a {
+  color: black;
+}
+.custome_dropdownmenu a:hover {
+  color: black;
+}
+
+.custome_dropdownmenu_botones:hover {
+  background-color: #E41D69;
+}
+.custome_dropdownmenu_botones:focus {
+  background-color: blueviolet;
+}
+
+/* FIN DESPLEGABLE */
+.navegacion__redes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.navegacion__redes img {
+  width: 50px;
+  height: 50px;
+}
+
+.custome_lupa {
+  --bs-btn-color: #E41D69;
+  --bs-btn-border-color: #E41D69;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #E41D69;
+  --bs-btn-hover-border-color: #E41D69;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E41D69;
+  --bs-btn-active-border-color: #E41D69;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #E41D69;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #E41D69;
+  --bs-gradient: none;
+}
+
+.encabezado {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  color: white;
+  height: 937px;
+  background-image: url(../img/Encabezado.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.encabezado h1 {
+  font-family: "Permanent Marker", serif;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+  grid-row-start: 2;
+  font-size: clamp(1.5rem, 16vw, 17rem);
+  transition: font-size 0.3s ease;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Sombra inferior derecha */
+}
+.encabezado h2 {
+  font-family: "Bebas Neue", serif;
+  font-style: normal;
+  font-size: 5rem;
+  grid-row-start: 3;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Sombra inferior derecha */
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilos.css.map */
