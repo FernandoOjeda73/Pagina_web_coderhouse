@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(39, 39, 39);
+    margin: 0;
+    font-family: $fuente-principal;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "XOPQ" 96,
+      "XTRA" 468,
+      "YOPQ" 79,
+      "YTAS" 750,
+      "YTDE" -203,
+      "YTFI" 738,
+      "YTLC" 514,
+      "YTUC" 712; 
+}
+
+main{
+  background-color: black;
+  padding: $padding-general;
+}
+
+footer{
+  width:100%;
+  height: 100%;
+  background-color: $color_contenedores;
+  padding-bottom: $padding-general;
+}

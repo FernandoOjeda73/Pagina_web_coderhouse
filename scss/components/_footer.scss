@@ -1,0 +1,37 @@
+.footer_contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer_lista{
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;    
+     a{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        &:hover{
+            color: $color_principal;
+        }
+    }
+}
+
+.newsletter_form {
+    border: 2px solid black;
+    padding: $padding-general;
+    border-top-left-radius: $border-general;
+    border-bottom-left-radius: $border-general;
+}
+.newsletter_btn {
+    position: relative;
+    right: 6px;
+    background-color: $color_principal;
+    padding: $padding-general;
+    border-top-right-radius: $border-general;
+    border-bottom-right-radius: $border-general;
+
+}

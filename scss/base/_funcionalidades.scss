@@ -1,0 +1,21 @@
+@mixin text-shadow($color: black) {
+    text-shadow: 
+        -1px -1px 0 $color, 
+         1px -1px 0 $color, 
+        -1px  1px 0 $color, 
+         1px  1px 0 $color;
+}
+
+@mixin font-style($family, $size, $style: normal, $weight: lighter) {
+    font-family: $family, serif;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+@mixin grids($columns, $c_gap: 0px, $r_gap: 0px ) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-column-gap: $c_gap;
+    grid-row-gap: $r_gap;
+}

@@ -1,0 +1,49 @@
+.subtitulo {
+    display: block;
+        h2 {
+            @include font-style($fuente-secundaria,auto, italic, lighter);
+            text-align: center;
+            color: $color_principal;
+        }
+
+        img {
+        width: 100%;
+        }
+}
+
+.contenedor_productos {
+    background-color: $color_contenedores;
+    @include grids (3, 30px, 30px);
+    justify-items: center;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: $border-general;
+
+}
+
+.custome_card {
+    border-color: $color_principal;
+    width: 18rem;
+
+        h3 {
+            font-size: 1rem;
+            max-height: 100.79px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        img {
+            width: 100%;
+            height: 305px;
+            object-fit: contain;
+        }
+}
+
+.custome_contenedor_btn {
+    max-height: 70px;
+}
+
+.custome_btn {
+    background-color: $color_principal;
+}

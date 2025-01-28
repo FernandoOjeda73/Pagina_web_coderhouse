@@ -1,0 +1,16 @@
+.contenedor_form_contactenos{
+    display: block;
+        input, textarea{
+            border: 2px solid $color_principal;
+            padding: 5px;
+            border-radius: $border-general - 10;
+        }
+        button{
+            background-color: $color_principal;
+            color:$color_texto;
+            padding: 5px;
+            border-radius: $border-general - 10;
+            width: 180px;
+            text-align: center;
+        }
+}
