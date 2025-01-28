@@ -9,29 +9,17 @@
     background-size:cover;
     text-align: center;
         h1{
-            font-family: "Permanent Marker", serif;
-            font-style: italic;
-            font-weight: lighter;
+            @include font-style($fuente-secundaria, clamp(1.5rem, 16vw, 17rem), italic, lighter);
+            text-align: center;
             margin: 0;
             grid-row-start: 2;
-            font-size: clamp(1.5rem, 16vw, 17rem);
             transition: font-size 0.3s ease; 
-            text-shadow: 
-                -1px -1px 0 black, /* Sombra superior izquierda */
-                1px -1px 0 black, /* Sombra superior derecha */
-                -1px  1px 0 black, /* Sombra inferior izquierda */
-                1px  1px 0 black; /* Sombra inferior derecha */
+            @include text-shadow;
         }
         h2{
-            font-family: "Bebas Neue", serif;
-            font-style:normal;
-            font-size: 5rem;
+            @include font-style($fuente-terciaria, 5rem, normal, normal);
             grid-row-start: 3;
-            text-shadow: 
-            -1px -1px 0 black, /* Sombra superior izquierda */
-            1px -1px 0 black, /* Sombra superior derecha */
-            -1px  1px 0 black, /* Sombra inferior izquierda */
-            1px  1px 0 black; /* Sombra inferior derecha */
+            @include text-shadow;
             margin: 0;
         }
 }

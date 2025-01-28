@@ -13,24 +13,20 @@
             color:white;
             text-decoration: none;
             &:focus,:hover{
-                color: #E41D69;  
+                color: $color_principal;  
             } 
         }
 }
 
 .custome_brand{
-    font-family: "Permanent Marker", serif;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: lighter;
+    @include font-style($fuente-secundaria, 3rem, italic, lighter);
     text-align: center;
 }
 .custome_toggler{
     background-color: white !important;
 }
 .custome_navegacion_botones {
-    font-family: "Permanent Marker", serif;
-    font-size: 3rem;
+    @include font-style($fuente-secundaria, 3rem, normal, normal);
     text-align: center;
  
 }
@@ -38,24 +34,24 @@
 /* INICIO DESPLEGABLE */
 .custome_dropdown{
     &:focus{
-        color: #E41D69 !important;
+        color: $color_principal !important;
     }  
 }
 
 .custome_dropdownmenu{
-    --bs-dropdown-bg: azure;
+    --bs-dropdown-bg: $color_contenedores;
     font-size: 1.5rem;
         a{
-            color: black;
+            color: $color_texto;
             &:hover{
-                color: black; 
+                color: $color_texto; 
             }
         }
 }
 
 .custome_dropdownmenu_botones{
     &:hover{
-    background-color:  #E41D69;
+    background-color:  $color_principal;
     }
     &:focus{
     background-color: blueviolet;
@@ -65,8 +61,7 @@
 /* FIN DESPLEGABLE */
 
 .navegacion__redes{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    @include grids(3);
     column-gap: 40px;
     margin-top: 10px;
     margin-right: 20px;
@@ -77,19 +72,19 @@
 }
 
 .custome_lupa{
-    --bs-btn-color: #E41D69;
-    --bs-btn-border-color: #E41D69;
+    --bs-btn-color: $color_principal;
+    --bs-btn-border-color: $color_principal;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #E41D69;
-    --bs-btn-hover-border-color: #E41D69;
+    --bs-btn-hover-bg: $color_principal;
+    --bs-btn-hover-border-color: $color_principal;
     --bs-btn-focus-shadow-rgb: 25, 135, 84;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #E41D69;
-    --bs-btn-active-border-color: #E41D69;
+    --bs-btn-active-bg: $color_principal9;
+    --bs-btn-active-border-color: $color_principal;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #E41D69;
+    --bs-btn-disabled-color: $color_principal;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #E41D69;
+    --bs-btn-disabled-border-color: $color_principal;
     --bs-gradient: none;
 
 }

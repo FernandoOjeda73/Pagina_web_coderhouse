@@ -1,0 +1,37 @@
+@media (max-width:731px){
+    .custome_navegacion{
+        --bs-navbar-brand-margin-end: 0rem;    
+    }
+    
+}
+@media (min-width:1400px) and (max-width:1748px){
+
+    .custome_navegacion{
+        --bs-navbar-brand-margin-end: 3rem;    
+    }
+
+}
+
+@media (max-width:1400px){
+    .navegacion__redes{
+    margin-right: 0px;
+    text-align: center;
+    }
+}
+
+@media (max-width:1000px){
+    .contenedor_productos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:660px){
+    .contenedor_productos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width:525px){
+    .custome_mapa{
+        width:100%;
+    }
+}
