@@ -16,8 +16,8 @@
     @include grids (3, 30px, 30px);
     justify-items: center;
     margin: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: $border-general;
 
 }
@@ -25,6 +25,10 @@
 .custome_card {
     border-color: $color_principal;
     width: 18rem;
+    transition: 0.4s;
+        &:hover{
+            transform: scale(1.1);
+        }
 
         h3 {
             font-size: 1rem;
@@ -42,8 +46,13 @@
 
 .custome_contenedor_btn {
     max-height: 70px;
+ 
 }
 
 .custome_btn {
     background-color: $color_principal;
+    &:hover{
+        background-color: $color_principal;
+        color:$color_texto_claro;
+    }
 }

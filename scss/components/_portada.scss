@@ -1,7 +1,7 @@
 .encabezado{
     display: grid;
     grid-template-rows: repeat(4 , 1fr);
-    color:white;
+    color:$color_texto_claro;
     height: 937px;
     background-image: url(../img/Encabezado.png);
     background-repeat: no-repeat;

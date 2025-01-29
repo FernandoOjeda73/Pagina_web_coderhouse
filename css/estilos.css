@@ -37,7 +37,7 @@ footer {
   color: white;
   text-decoration: none;
 }
-.custome_navegacion a:focus, .custome_navegacion a :hover {
+.custome_navegacion a:focus, .custome_navegacion a:hover {
   color: #E41D69;
 }
 
@@ -55,7 +55,7 @@ footer {
 
 .custome_navegacion_botones {
   font-family: "Permanent Marker", serif, serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -67,14 +67,14 @@ footer {
 }
 
 .custome_dropdownmenu {
-  --bs-dropdown-bg: $color_contenedores;
+  --bs-dropdown-bg: azure;
   font-size: 1.5rem;
 }
 .custome_dropdownmenu a {
-  color: #000000;
+  color: black;
 }
 .custome_dropdownmenu a:hover {
-  color: #000000;
+  color: black;
 }
 
 .custome_dropdownmenu_botones:hover {
@@ -97,6 +97,10 @@ footer {
 .navegacion__redes img {
   width: 50px;
   height: 50px;
+  transition: 0.5s;
+}
+.navegacion__redes img:hover {
+  transform: scale(1.4);
 }
 
 .custome_lupa {
@@ -171,14 +175,18 @@ footer {
   grid-row-gap: 30px;
   justify-items: center;
   margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 30px;
 }
 
 .custome_card {
   border-color: #E41D69;
   width: 18rem;
+  transition: 0.4s;
+}
+.custome_card:hover {
+  transform: scale(1.1);
 }
 .custome_card h3 {
   font-size: 1rem;
@@ -199,6 +207,10 @@ footer {
 .custome_btn {
   background-color: #E41D69;
 }
+.custome_btn:hover {
+  background-color: #E41D69;
+  color: white;
+}
 
 /**------------MAIN SECUNDARIO------------*/
 .contenedor_texto {
@@ -206,15 +218,15 @@ footer {
   margin: 20px;
   padding: 0;
   background-color: azure;
-  color: #000000;
+  color: black;
   border-radius: 30px;
 }
 .contenedor_texto h1 {
-  color: #000000;
+  color: black;
   text-align: center;
 }
 .contenedor_texto h2 {
-  color: #000000;
+  color: black;
 }
 .contenedor_texto section {
   margin-bottom: 20px;
@@ -234,7 +246,7 @@ footer {
 }
 .contenedor_form_contactenos button {
   background-color: #E41D69;
-  color: #000000;
+  color: black;
   padding: 5px;
   border-radius: 20px;
   width: 180px;

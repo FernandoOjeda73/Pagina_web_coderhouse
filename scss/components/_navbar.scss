@@ -3,16 +3,16 @@
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    border-radius: 30px;
+    border-radius: $border-general;
     outline: 2px solid white;
     outline-offset: -6px;
     --bs-navbar-brand-margin-end: 20rem;
     width: 100%;
     z-index: 1000; 
         a{
-            color:white;
+            color:$color_texto_claro;
             text-decoration: none;
-            &:focus,:hover{
+            &:focus,&:hover{
                 color: $color_principal;  
             } 
         }
@@ -26,7 +26,7 @@
     background-color: white !important;
 }
 .custome_navegacion_botones {
-    @include font-style($fuente-secundaria, 3rem, normal, normal);
+    @include font-style($fuente-secundaria, 2rem, normal, normal);
     text-align: center;
  
 }
@@ -39,23 +39,25 @@
 }
 
 .custome_dropdownmenu{
-    --bs-dropdown-bg: $color_contenedores;
+    --bs-dropdown-bg: azure;
     font-size: 1.5rem;
         a{
-            color: $color_texto;
+            color: $color_texto_oscuro;
             &:hover{
-                color: $color_texto; 
+                color: $color_texto_oscuro; 
             }
         }
 }
 
 .custome_dropdownmenu_botones{
-    &:hover{
-    background-color:  $color_principal;
-    }
-    &:focus{
-    background-color: blueviolet;
-    }
+    
+        &:hover{
+            background-color:  $color_principal;
+        }
+        
+        &:focus{
+            background-color: blueviolet;
+        }
 }
 
 /* FIN DESPLEGABLE */
@@ -68,6 +70,10 @@
         img{
             width: 50px;
             height: 50px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.4);
+            }
         }
 }
 
