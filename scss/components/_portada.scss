@@ -3,11 +3,28 @@
     grid-template-rows: repeat(4 , 1fr);
     color:$color_texto_claro;
     height: 937px;
-    background-image: url(../img/Encabezado.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    // background-image: url(../img/Encabezado.png);
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size:cover;
     text-align: center;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    overflow: hidden; /* Evita que el desenfoque se salga del contenedor */
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/Encabezado.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            filter: blur(8px); /* Aplica el desenfoque al fondo */
+            z-index: -1; /* Envía el pseudo-elemento al fondo */
+        }
+        
         h1{
             @include font-style($fuente-secundaria, clamp(1.5rem, 16vw, 17rem), italic, lighter);
             text-align: center;
